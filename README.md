@@ -1,20 +1,18 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# grc
+Gestión de riesgo
 
-# Run and deploy your AI Studio app
+Sitio publicado: https://mariagutierrez-dot.github.io/grc/
 
-This contains everything you need to run your app locally.
+## Ejecutar en local
 
-View your app in AI Studio: https://ai.studio/apps/034ac237-3dbc-4d6f-9c45-fbb265a37d0c
+**Requisitos:** Node.js
 
-## Run Locally
+1. Instalar dependencias: `npm install`
+2. Definir `GEMINI_API_KEY` en `.env.local` (necesario para el plan de acción con IA)
+3. Ejecutar: `npm run dev`
 
-**Prerequisites:**  Node.js
+## Despliegue
 
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+Cada push a `main` compila el front con Vite y lo publica en GitHub Pages
+(`.github/workflows/deploy-pages.yml`). El endpoint `/api/generate-action-plan`
+de `server.ts` no está disponible en Pages.
