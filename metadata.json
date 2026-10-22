@@ -1,0 +1,8 @@
+{
+  "name": "Remix: Master_ISO31000_App V1",
+  "description": "Global66 GRC & Process Governance Dashboard with Consolidated Inventory, ISO 31000 Risk Management, Tarjetas Temporales, Multitarjeta & Flujo de Bloqueos Matrices, and Document Traceability.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
