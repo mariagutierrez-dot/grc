@@ -6,8 +6,8 @@ import {defineConfig, loadEnv} from 'vite';
 export default defineConfig(({mode}) => {
   const env = loadEnv(mode, '.', '');
   return {
-    // GitHub Pages sirve el sitio bajo /grc-global66/
-    base: process.env.GITHUB_PAGES === 'true' ? '/grc-global66/' : '/',
+    // GitHub Pages sirve el sitio bajo /grc/
+    base: process.env.GITHUB_PAGES === 'true' ? '/grc/' : '/',
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
