@@ -1,0 +1,2 @@
+# grc
+Gestión de riesgo 
